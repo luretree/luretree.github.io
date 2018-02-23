@@ -80,13 +80,22 @@ width: 100%;
 margin: 0px 50px;
 height: 100vh;
 display: table;
-float: left;
 }
 .content {
 vertical-align: middle;
 display: table-cell;
 }
 
+@media (min-width: 1100px) {
+.productImage {
+float: left;
+}
+}
+@media (max-width: 1099px) {
+.productImage {
+margin: auto;
+}
+}
 @media (max-aspect-ratio: 1/1) {
 .productImage {
 width: 100%;
