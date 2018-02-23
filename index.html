@@ -45,7 +45,7 @@ height: 25px;
 vertical-align: center;
 }
 body {
-width: 100%;
+width: 90%;
 max-width: 1000px;
 margin: auto;
 font-size: 12pt;
@@ -85,6 +85,18 @@ float: left;
 .content {
 vertical-align: middle;
 display: table-cell;
+}
+
+@media (max-aspect-ratio: 1/1) {
+.productImage {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+height: 100vh;
+display: table;
+max-width: 100vw;
+}
 }
 </style>
 </html>
