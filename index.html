@@ -8,20 +8,45 @@
     
     <body id="body">
         <img class="background" id="background1" src="https://luretree.github.io/LongView1.jpg">
-        <img class="background" id="background2" src="https://luretree.github.io/LongView2.jpg" style="opacity: 0;">
-            <div style="height: 100vh;">
-                <h1>LongView Designs</h1>
-                <p style="position: relative; bottom: 20%; margin: 0px 0px 0px 50px;">What is LongView Designs?</p>
-            </div>
-            <div class="productImage"><div class="content">
-                <img src="https://luretree.github.io/LureTree2.jpg">
-                    <p class="productTitle">LureTree - 12 Lures</p><button>Details</button>
-                    </div></div>
-            <div class="productImage"><div class="content">
-                <img src="https://luretree.github.io/LureTree1.jpg">
-                    <p class="productTitle">12 Lures with Bucket Mount</p><button>Details</button>
-                    </div></div>
-            </body>
+            <img class="background" id="background2" src="https://luretree.github.io/LongView2.jpg" style="opacity: 0;">
+                <img class="background" id="background3" src="https://luretree.github.io/WhiteBackground.jpg" style="opacity: 0;">
+                    <div style="height: 100vh;">
+                        <h1>LongView Designs</h1>
+                        <p style="position: relative; bottom: 20%; margin: 0px 0px 0px 50px;">What is LongView Designs?</p>
+                    </div>
+                    <h1 style="line-height: 50vh;">Our Products</h1>
+                    <div class="productImage"><div class="content">
+                        <img src="https://luretree.github.io/LureTree.jpg">
+                            <p class="productTitle" style="text-align: left;">Put the LureTree in your five-gallon bucket and hang your fishing lures from it.</p>
+                            </div></div>
+                    <div class="productImage"><div class="content">
+                        <img src="https://luretree.github.io/LureTree0.jpg">
+                            <p class="productTitle"></p>
+                            </div></div>
+                    <div class="productImage" style="float: none;"><div class="content">
+                        <img src="https://luretree.github.io/CuttingBoard.jpg">
+                            <p class="productTitle" style="text-align: left;">Cut bait faster with the Micro Cutting Board.</p>
+                            </div></div>
+                    <h1 style="line-height: 50vh;">Catalog</h1>
+                    <div class="productImage"><div class="content">
+                        <img src="https://luretree.github.io/LureTree1.jpg">
+                            <p class="productTitle">LureTree - 9 Lures</p><button>Details</button>
+                            </div></div>
+                    <div class="productImage"><div class="content">
+                        <img src="https://luretree.github.io/LureTree2.jpg">
+                            <p class="productTitle">LureTree - 12 Lures</p><button>Details</button>
+                            </div></div>
+                    <div class="productImage"><div class="content">
+                        <img src="https://luretree.github.io/CuttingBoard.jpg">
+                            <p class="productTitle">Micro Cutting Board</p><button>Details</button>
+                            </div></div>
+                    <div id="menuBackground">
+                        <div id="menu">
+                            <p class="menuItem" style="font-family: 'Dancing Script', cursive; width: 150px;">LongView Designs</p>
+                            <a class="menuItem" href="">About Us</a>
+                        </div>
+                        <div>
+                            </body>
     
     <style>
         h1 {
@@ -31,6 +56,8 @@
             line-height: 100vh;
             font-size: 60pt;
             margin: 0px;
+            max-height: 100vh;
+            overflow: hidden;
         }
     p {
         font-family: 'Roboto', sans-serif;
@@ -100,6 +127,29 @@
         transition: 1s;
     }
     
+    #menuBackground {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        height: 50px;
+        opacity: 1;
+    }
+    .menuItem {
+        height: 50px;
+        width: 100px;
+        float: left;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12pt;
+        line-height: 50px;
+        opacity: 1;
+        z-index: 1;
+        margin: 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
     @media (min-width: 1100px) {
         .productImage {
             float: left;
@@ -128,9 +178,15 @@
             if (window.pageYOffset < (window.innerHeight * 0.5)) {
                 document.getElementById("background1").style.opacity = 1
                 document.getElementById("background2").style.opacity = 0
-            } else {
+                document.getElementById("background3").style.opacity = 0
+            } else if (window.pageYOffset < (window.innerHeight * 3)) {
                 document.getElementById("background1").style.opacity = 0
                 document.getElementById("background2").style.opacity = 1
+                document.getElementById("background3").style.opacity = 0
+            } else {
+                document.getElementById("background1").style.opacity = 0
+                document.getElementById("background2").style.opacity = 0
+                document.getElementById("background3").style.opacity = 1
             }
         }
     </script>
