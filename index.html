@@ -12,40 +12,43 @@
                 <img class="background" id="background3" src="https://luretree.github.io/WhiteBackground.jpg" style="opacity: 0;">
                     <div style="height: 100vh;">
                         <img src="https://luretree.github.io/Logo.svg" alt="LongView Designs" style="height: 100vh; width: 100%;">
-                        <p style="position: relative; bottom: 20%; margin: 0px 0px 0px 50px;">What is LongView Designs?</p>
-                    </div>
-                    <h1 style="line-height: 50vh;">Our Products</h1>
-                    <div class="productImage"><div class="content">
-                        <img src="https://luretree.github.io/LureTree.jpg">
-                            <p class="productTitle" style="text-align: left;">Put the LureTree in your five-gallon bucket and hang your fishing lures from it.</p>
-                            </div></div>
-                    <div class="productImage"><div class="content">
-                        <img src="https://luretree.github.io/LureTree0.jpg">
-                            <p class="productTitle"></p>
-                            </div></div>
-                    <div class="productImage" style="float: none;"><div class="content">
-                        <img src="https://luretree.github.io/CuttingBoard.jpg">
-                            <p class="productTitle" style="text-align: left;">Cut bait faster with the Micro Cutting Board.</p>
-                            </div></div>
-                    <h1 style="line-height: 50vh;">Catalog</h1>
-                    <div class="productImage"><div class="content">
-                        <img src="https://luretree.github.io/LureTree1.jpg">
-                            <p class="productTitle">LureTree - 9 Lures</p><button>Details</button>
-                            </div></div>
-                    <div class="productImage"><div class="content">
-                        <img src="https://luretree.github.io/LureTree2.jpg">
-                            <p class="productTitle">LureTree - 12 Lures</p><button>Details</button>
-                            </div></div>
-                    <div class="productImage"><div class="content">
-                        <img src="https://luretree.github.io/CuttingBoard.jpg">
-                            <p class="productTitle">Micro Cutting Board</p><button>Details</button>
-                            </div></div>
-                    <div id="menuBackground">
-                        <div id="menu">
-                            <p class="menuItem" style="font-family: 'Dancing Script', cursive; width: 150px;">LongView Designs</p>
-                            <a class="menuItem" href="">About Us</a>
-                        </div>
-                        <div>
+                            <p style="position: relative; bottom: 20%; margin: 0px 0px 0px 50px;">What is LongView Designs?</p>
+                            </div>
+                    <div id="ourProducts">
+                        <h1 style="line-height: 50vh;">Our Products</h1>
+                        <div class="productImage"><div class="content">
+                            <img src="https://luretree.github.io/LureTree.jpg">
+                                <p class="productTitle" style="text-align: left;"><span style="font-size: 20pt;">LureTree</span><br><br>Put the LureTree in your five-gallon bucket and hang your fishing lures from it.</p>
+                                </div></div>
+                        <div class="productImage"><div class="content">
+                            <img src="https://luretree.github.io/LureTree0.jpg">
+                                <p class="productTitle" style="text-align: left;">LureTree is designed to fit in your five-gallon bucket.</p>
+                                </div></div>
+                        <div class="productImage" style="float: none;"><div class="content">
+                            <img src="https://luretree.github.io/CuttingBoard.jpg">
+                                <p class="productTitle" style="text-align: left;"><span style="font-size: 20pt;">Micro Cutting Board</span><br><br>Cut bait faster with the Micro Cutting Board.</p>
+                                </div></div>
+                    </div><div id="catalog">
+                        <h1 style="line-height: 50vh;">Catalog</h1>
+                        <div class="productImage"><div class="content">
+                            <img src="https://luretree.github.io/LureTree1.jpg">
+                                <p class="productTitle">LureTree - 9 Lures</p><button>Details</button>
+                                </div></div>
+                        <div class="productImage"><div class="content">
+                            <img src="https://luretree.github.io/LureTree2.jpg">
+                                <p class="productTitle">LureTree - 12 Lures</p><button>Details</button>
+                                </div></div>
+                        <div class="productImage"><div class="content">
+                            <img src="https://luretree.github.io/CuttingBoard.jpg">
+                                <p class="productTitle">Micro Cutting Board</p><button>Details</button>
+                                </div></div>
+                        <div id="menuBackground">
+                            <div id="menu">
+                                <p class="menuItem" style="font-family: 'Dancing Script', cursive; width: 150px;">LongView Designs</p>
+                                <a class="menuItem" href="">About Us</a>
+                            </div>
+                            <div>
+                            </div>
                             </body>
     
     <style>
@@ -179,7 +182,7 @@
                 document.getElementById("background1").style.opacity = 1
                 document.getElementById("background2").style.opacity = 0
                 document.getElementById("background3").style.opacity = 0
-            } else if (window.pageYOffset < (window.innerHeight * 3)) {
+            } else if (window.pageYOffset < (document.getElementById("ourProducts").clientHeight + window.innerHeight * 0.5)) {
                 document.getElementById("background1").style.opacity = 0
                 document.getElementById("background2").style.opacity = 1
                 document.getElementById("background3").style.opacity = 0
