@@ -1,0 +1,225 @@
+<!Doctype HTML>
+<html>
+    
+    <head>
+        <title>LongView Designs</title>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto" rel="stylesheet">
+            </head>
+    
+    <body id="body">
+        <h1>LureTree - 9 Lures</h1>
+        <div style="height: 50px; margin: auto; display: table;"><div style="float: left; display: table-cell; vertical-align: middle;">
+            <p class="productTitle">$25</p><button onclick="showOrderForm()">Order</button>
+        </div></div>
+        <div class="productImageSmall"><div class="content">
+            <img src="https://luretree.github.io/LureTree.jpg">
+                <p class="productTitle" style="text-align: left;">You can hang 9 lures from this LureTree.</p>
+                </div></div>
+        <div class="productImage"><div class="content">
+            <img src="https://luretree.github.io/LureTree0.jpg">
+                <p class="productTitle" style="text-align: left;">LureTree is designed to fit in your five-gallon bucket.</p>
+                </div></div>
+        <div class="productImageSmall"><div class="content">
+            <img src="https://luretree.github.io/LureTree1.jpg">
+                <p class="productTitle" style="text-align: left;">Your bucket will love this attachment.</p>
+                </div></div>
+        <h2>Description</h2>
+        <p>All about the LureTree</p>
+        <h2>Tech Specs</h2>
+        <p>Holds 9 lures with 6-inch bodies<br>Made in the US<br>Fits in a five-gallon bucket<br>Made with HDPE plastic<br>27.94 centimeter (11 in) diameter<br>0.64 centimeters (0.25 in) thick</p>
+        <h2>Reviews</h2>
+        <p>"It was […] good."</p>
+        <p>"Arguably the most useful piece of useless plastic I've seen in my life."</p>
+        <br>
+        <p>Let us know what you think about LureTree! We may put your review on the product page.</p>
+        <button style="float: left; width: 150px; margin: 0px;">Send a review</button>
+        <br><br><br>
+        <div id="menuBackground"><div id="menu">
+            <a class="menuItem" style="font-family: 'Dancing Script', cursive; width: 150px;" href="https://luretree.github.io">LongView Designs</a>
+            <a class="menuItem" href="">About Us</a>
+        </div></div>
+        <div class="popup" id="orderForm"><div style="margin: 10%;">
+            <button style="position: absolute; top: 8px; left: 8px; background-color: #ffffff; color: #007aff; width: initial;" onclick="hideOrderForm()">Back</button>
+            <h1 style="margin: 10% 0px 0px 0px;">Order LureTree</h1>
+            <p>To order LureTree, download, print, and fill out the order form and mail it to<br><br>7 Hanover Farms Road<br>Bolton CT, 06043<br>United States</p>
+            <a href="https://luretree.github.io/orderForm9.pdf" download="LureTree Order Form - 9 Lures"><button style="margin: 0px; float: left; width: 200px;">Download the Order Form</button></a>
+        </div></div>
+    </body>
+    
+    <style>
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 300;
+            text-align: center;
+            font-size: 60pt;
+            margin: 25vh 0px 25px 0px;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20pt;
+        text-align: left;
+        margin: 80pt 0pt 40pt 0pt;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+    }
+    .productTitle {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 15pt;
+        margin: 6px;
+        float: left;
+        line-height: 25px;
+        height: 25px;
+        vertical-align: center;
+    }
+    body {
+        width: 90%;
+        max-width: 1500px;
+        margin: auto;
+        font-size: 12pt;
+        font-weight: 400;
+        line-height: 1.8;
+        text-align: center;
+        transition: 1s;
+    }
+    img {
+        width: 100%;
+        border-radius: 6px;
+    }
+    button {
+        width: 80px;
+        height: 25px;
+        background-color: #007aff;
+        border: none;
+        color: #fff;
+        border-radius: 6px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11pt;
+        float: right;
+        margin: 6px;
+        transition: 0.15s;
+    }
+    button:active {
+        background-color: #006EE5;
+        transition: 0.25s;
+    }
+    .productImage {
+        max-width: 400px;
+        width: 100%;
+        margin: 0px 50px;
+        height: 100vh;
+        display: table;
+    }
+    .productImageSmall {
+        max-width: 350px;
+        width: 100%;
+        margin: 0px 50px;
+        height: 100vh;
+        display: table;
+    }
+    .content {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    .background {
+        position: fixed;
+        border-radius: 0;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transition: 1s;
+    }
+    
+    #menuBackground {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        height: 50px;
+        opacity: 1;
+    }
+    .menuItem {
+        height: 50px;
+        width: 100px;
+        float: left;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12pt;
+        line-height: 50px;
+        opacity: 1;
+        z-index: 1;
+        margin: 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    @media (min-width: 1650px) {
+        .productImage {
+            float: left;
+        }
+        .productImageSmall {
+            float: left;
+        }
+        
+        .popup {
+            position: fixed;
+            margin: auto;
+            top: 100px;
+            bottom: 100vh;
+            left: 100px;
+            right: 100px;
+            background-color: white;
+            box-shadow: 0px 0px 8px #8e8e93;
+            border-radius: 6px;
+            overflow: scroll;
+            transition: 0.5s;
+        }
+    }
+    @media (max-width: 1649px) {
+        .productImage {
+            margin: auto;
+        }
+        .productImageSmall {
+            margin: auto;
+        }
+    }
+    @media (max-aspect-ratio: 1/1) {
+        .productImage {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 100vh;
+            display: table;
+            max-width: 100vw;
+        }
+        .productImageSmall {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 100vh;
+            display: table;
+            max-width: 100vw;
+        }
+    }
+    </style>
+    
+    <script>
+        function showOrderForm() {
+            document.getElementById("orderForm").style.bottom = "100px"
+        }
+        function hideOrderForm() {
+            document.getElementById("orderForm").style.bottom = "100vh"
+        }
+    </script>
+</html>
+
